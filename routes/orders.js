@@ -30,8 +30,6 @@ router.post('/', async (req, res) => {
 
   const orderItemIdsResolved = await orderItemIds;
 
-  console.log(orderItemIdsResolved);
-
   let order = new Order({
     orderItems: orderItemIdsResolved,
     userId: req.body.userId,

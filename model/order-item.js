@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const autoIncrement = require('mongoose-sequence')(mongoose);
 const orderItemSchema = mongoose.Schema({
   quantity: {
     type: Number,
@@ -11,8 +10,6 @@ const orderItemSchema = mongoose.Schema({
   },
   productId: {
     type: Number,
-    /*     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Product', */
   },
 });
 
